@@ -1,0 +1,26 @@
+// BROWSERS CORE
+@mixin setAttributeCores($attr, $value, $browsers: $browsers-core) {
+    #{$attr}: #{$value};
+
+    @each $browser in $browsers {
+        -#{$browser}-#{$attr}: #{$value};
+    }
+}
+
+// CONTAINER STRUCTURE
+@mixin fullWidth() {
+    width: 100%;
+}
+
+@mixin containerWidth() {
+    max-width: 1200px;
+    margin: auto;
+}
+
+// FLEXBOX
+@mixin flex($justifyContent: center, $alignItems: center, $flexWrap: wrap) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-wrap: $flexWrap;
+}
