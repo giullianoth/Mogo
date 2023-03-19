@@ -26,3 +26,11 @@ img {
     display: block;
     @include fullWidth;
 }
+
+@mixin theme() {
+    .mogo {
+        @content;
+    }
+}
+
+@import "theme/header";

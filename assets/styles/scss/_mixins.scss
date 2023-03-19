@@ -15,6 +15,7 @@
 @mixin containerWidth() {
     max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
 }
 
 // FLEXBOX
@@ -23,4 +24,41 @@
     justify-content: $justifyContent;
     align-items: $alignItems;
     flex-wrap: $flexWrap;
+}
+
+@mixin flexBasis($basis, $gap: 0) {
+    @if $gap != 0 {
+        flex-basis: calc($basis - $gap);
+    }
+
+    @else {
+        flex-basis: $basis;
+    }
+}
+
+@mixin flex1($gap: 0) {
+    @include flexBasis(100%, $gap);
+}
+
+@mixin flex2($gap: 0) {
+    @include flexBasis(calc(100% / 2), $gap);
+}
+
+@mixin flex3($gap: 0) {
+    @include flexBasis(calc(100% / 3), $gap);
+}
+
+@mixin flex4($gap: 0) {
+    @include flexBasis(calc(100% / 4), $gap);
+}
+
+// POSITION
+@mixin relative() {
+    position: relative;
+}
+
+@mixin absolute($top: 0, $left: 0) {
+    position: absolute;
+    top: $top;
+    left: $left;
 }

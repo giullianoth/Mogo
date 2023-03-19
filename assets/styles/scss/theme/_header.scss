@@ -1,0 +1,61 @@
+@include theme() {
+    &_header {
+        @include absolute;
+        @include fullWidth;
+        z-index: 10;
+        padding: 30px 0;
+
+        &_content {
+            @include containerWidth;
+            @include flex;
+
+            &_title {
+                @include flex2;
+
+                h1 {
+                    text-transform: none;
+                    font-size: 1.6em;
+
+                    a {
+                        color: $color-white;
+                    }
+                }
+            }
+
+            &_menu {
+                @include flex2;
+                @include relative;
+                text-align: right;
+
+                &_icon {
+                    font-size: 1.8em;
+                    color: $color-white;
+                }
+
+                ul {
+                    @include absolute(calc(100% + 20px), unset);
+                    right: 0;
+
+                    background-color: $color-primary;
+                    padding: 20px 40px;
+
+                    li {
+                        list-style: none;
+                        padding: 12px 0;
+
+                        a {
+                            font-size: 1.4em;
+                            color: $color-white;
+                            text-transform: uppercase;
+                            font-family: $font-montserrat;
+
+                            &:hover {
+                                color: $color-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
