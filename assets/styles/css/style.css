@@ -483,12 +483,31 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 600px;
+  margin: auto;
+  padding: 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .mogo_service_content_boxcollapse {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .mogo_service_content_boxcollapse_image {
   flex-basis: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .mogo_service_content_boxcollapse_image {
+    flex-basis: calc(50% - 30px);
+  }
+}
 .mogo_service_content_boxcollapse_collapse {
   flex-basis: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .mogo_service_content_boxcollapse_collapse {
+    flex-basis: calc(50% - 30px);
+  }
 }
 .mogo_service_content_boxcollapse_collapse_item {
   margin-bottom: 14px;

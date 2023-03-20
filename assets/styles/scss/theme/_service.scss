@@ -10,12 +10,27 @@
                 @include flex;
                 gap: 30px;
 
+                @include containerWidth(600px, 0, 0);
+
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    @include fullWidth;
+                    max-width: 100%;
+                }
+
                 &_image {
                     @include flex1;
+
+                    @include setResponsiveDesign($breakpoint-desktop-sd) {
+                        @include flex2(30px);
+                    }
                 }
 
                 &_collapse {
                     @include flex1;
+
+                    @include setResponsiveDesign($breakpoint-desktop-sd) {
+                        @include flex2(30px);
+                    }
 
                     &_item {
                         margin-bottom: 14px;
