@@ -394,3 +394,57 @@ img {
     font-size: 0.2em;
   }
 }
+
+.mogo_services {
+  margin: 60px 0;
+  width: 100%;
+}
+.mogo_services_content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.mogo_services_content_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  max-width: 480px;
+  margin: auto;
+  padding: 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .mogo_services_content_list {
+    max-width: 100%;
+  }
+}
+.mogo_services_content_list_service {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 50px 20px;
+}
+@media screen and (min-width: 1024px) {
+  .mogo_services_content_list_service {
+    flex-basis: 33.3333333333%;
+  }
+}
+.mogo_services_content_list_service:not(:last-child) {
+  border-bottom: 1px solid #E5E5E5;
+}
+.mogo_services_content_list_service_icon i {
+  color: #95E1D3;
+  font-size: 1.6em;
+}
+.mogo_services_content_list_service_info h2 {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .mogo_services_content_list_service:nth-child(4), .mogo_services_content_list_service:nth-child(5) {
+    border-bottom: none;
+  }
+}

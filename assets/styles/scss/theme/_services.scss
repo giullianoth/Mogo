@@ -1,0 +1,50 @@
+@include theme() {
+    &_services {
+        @include containerSpacing;
+        @include fullWidth;
+
+        &_content {
+            @include containerWidth;
+
+            &_list {
+                @include flex;
+                margin-top: 60px;
+                @include containerWidth(480px, 0, 0);
+                
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    max-width: 100%;
+                }
+
+                &_service {
+                    @include flex1;
+                    @include flex(center, flex-start, nowrap);
+                    gap: 20px;
+                    padding: 50px 20px;
+
+                    @include setResponsiveDesign($breakpoint-desktop-sd) {
+                        @include flex3;
+                    }
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $color-neutral-3;
+                    }
+
+                    &_icon i {
+                        color: $color-tertiary;
+                        font-size: 1.6em;
+                    }
+
+                    &_info h2 {
+                        margin-bottom: 20px;
+                    }
+
+                    &:nth-child(4), &:nth-child(5) {
+                        @include setResponsiveDesign($breakpoint-desktop-sd) {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
