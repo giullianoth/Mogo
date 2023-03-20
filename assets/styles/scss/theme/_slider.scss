@@ -50,18 +50,29 @@
 
                 &_content {
                     @include flex(center, center, nowrap);
-                    gap: 8px;
+                    gap: 20px;
                     @include containerWidth;
 
                     &_item {
-                        @include flex4(8px);
+                        @include flex4(20px);
 
                         h2 {
                             color: $color-white;
                             display: none;
+                            font-weight: 400;
 
-                            &:not(span) {
-                                font-weight: 400;
+                            @include setResponsiveDesign($breakpoint-mobile) {
+                                display: block;
+                                font-size: 0.8em;
+                            }
+
+                            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                                font-size: 1em;
+                            }
+
+                            span {
+                                font-weight: 700;
+                                font-size: 1.2em;
                             }
                         }
 
@@ -70,6 +81,13 @@
                             height: 3px;
                             background-color: $color-white;
                             margin-bottom: 24px;
+
+                            &_progression {
+                                width: 0;
+                                height: 100%;
+                                background-color: $color-primary;
+                                display: block;
+                            }
                         }
                     }
                 }
