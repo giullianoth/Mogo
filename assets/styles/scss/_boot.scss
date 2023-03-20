@@ -11,7 +11,12 @@ body {
     color: $color-neutral-2;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $font-montserrat;
     color: $color-neutral-1;
     font-weight: 700;
@@ -65,6 +70,42 @@ img {
         text-align: center;
         line-height: 1.8em;
         @include containerSpacing(40px);
+    }
+
+    &_card {
+        @include relative;
+        @include gradientBackground;
+
+        &_title {
+            @include absoluteFull;
+            @include flex;
+            display: none;
+
+            a {
+                color: $color-white;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.2em;
+
+                i {
+                    display: block;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: 10px 10px 0 $color-tertiary;
+
+            .mogo_card_image {
+                opacity: 0.1;
+            }
+
+            .mogo_card_title {
+                display: flex;
+            }
+        }
     }
 }
 
