@@ -206,10 +206,17 @@ img {
   flex-wrap: nowrap;
   flex-direction: column;
 }
+@media screen and (min-width: 900px) {
+  .mogo_slider_content {
+    height: 1000px;
+  }
+}
 .mogo_slider_content_slide {
-  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
   height: 100%;
-  padding-top: 120px;
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,6 +226,16 @@ img {
 .mogo_slider_content_slide_headline h1 {
   font-size: 3em;
   color: #FFF;
+}
+@media screen and (min-width: 600px) {
+  .mogo_slider_content_slide_headline h1 {
+    font-size: 5em;
+  }
+}
+@media screen and (min-width: 900px) {
+  .mogo_slider_content_slide_headline h1 {
+    font-size: 8em;
+  }
 }
 .mogo_slider_content_slide_headline h1 span {
   font-size: 0.5em;

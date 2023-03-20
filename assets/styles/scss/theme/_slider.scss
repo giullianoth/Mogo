@@ -14,10 +14,14 @@
             @include flex(flex-end, center, nowrap);
             flex-direction: column;
 
+            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                height: 1000px;
+            }
+
             &_slide {
-                @include fullWidth;
+                @include containerWidth(800px);
                 height: 100%;
-                padding-top: 120px;
+                padding-top: 40px;
 
                 @include flex;
                 text-align: center;
@@ -26,6 +30,14 @@
                     h1 {
                         font-size: 3em;
                         color: $color-white;
+
+                        @include setResponsiveDesign($breakpoint-mobile-landscape) {
+                            font-size: 5em;
+                        }
+
+                        @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                            font-size: 8em;
+                        }
 
                         span {
                             font-size: 0.5em;
