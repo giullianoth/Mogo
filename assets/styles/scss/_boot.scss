@@ -66,7 +66,7 @@ img {
         border: none;
     }
 
-    &_mainparagraph {
+    &_paragraph {
         text-align: center;
         line-height: 1.8em;
         @include containerSpacing(40px);
@@ -115,3 +115,4 @@ img {
 @import "theme/statistics";
 @import "theme/services";
 @import "theme/devices";
+@import "theme/service";

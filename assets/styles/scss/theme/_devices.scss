@@ -2,6 +2,7 @@
     &_devices {
         @include fullWidth;
         @include containerSpacing;
+        margin-bottom: 80px;
         @include backgroundImage("../../../assets/images/all-devices.jpg");
 
         &_content {
