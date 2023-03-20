@@ -556,3 +556,74 @@ img {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+
+.mogo_comments {
+  width: 100%;
+  margin: 60px 0;
+}
+.mogo_comments.comments1 {
+  background-color: #F8F8F8;
+}
+.mogo_comments_content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.mogo_comments_content_navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.8em;
+  height: 100%;
+  cursor: pointer;
+}
+.mogo_comments_content_commentarea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 0;
+}
+.mogo_comments_content_commentarea_image {
+  flex-basis: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mogo_comments_content_commentarea_image.comments1_commentarea_image {
+  border: 3px solid #95E1D3;
+}
+.mogo_comments_content_commentarea_image.comments1_commentarea_image i {
+  font-size: 3em;
+  color: #95E1D3;
+}
+.mogo_comments_content_commentarea_comment {
+  flex-basis: 100%;
+}
+.mogo_comments_content_commentarea_comment .comment {
+  font-style: italic;
+  line-height: 1.6em;
+  margin-bottom: 22px;
+}
+.mogo_comments_content_commentarea_comment hr {
+  display: inline-block;
+  width: 60px;
+  border: none;
+  border-bottom: 3px solid #F38181;
+}
+.mogo_comments_content_commentarea_comment .author {
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: "Kaushan Script", cursive;
+  color: #333;
+  margin-left: 10px;
+}
