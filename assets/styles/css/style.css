@@ -583,6 +583,11 @@ img {
   height: 100%;
   cursor: pointer;
 }
+@media screen and (min-width: 1024px) {
+  .mogo_comments_content_navigation {
+    padding: 0 20px;
+  }
+}
 .mogo_comments_content_commentarea {
   display: flex;
   justify-content: space-around;
@@ -609,10 +614,20 @@ img {
 .mogo_comments_content_commentarea_comment {
   flex-basis: 100%;
 }
+@media screen and (min-width: 600px) {
+  .mogo_comments_content_commentarea_comment {
+    flex-basis: 80%;
+  }
+}
 .mogo_comments_content_commentarea_comment .comment {
   font-style: italic;
   line-height: 1.6em;
   margin-bottom: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .mogo_comments_content_commentarea_comment .comment {
+    font-size: 1.2em;
+  }
 }
 .mogo_comments_content_commentarea_comment hr {
   display: inline-block;

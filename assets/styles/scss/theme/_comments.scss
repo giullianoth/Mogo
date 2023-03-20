@@ -17,6 +17,10 @@
                 font-size: 1.8em;
                 height: 100%;
                 cursor: pointer;
+
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    padding: 0 20px;
+                }
             }
 
             &_commentarea {
@@ -42,10 +46,18 @@
                 &_comment {
                     @include flexBasis(calc(100%));
 
+                    @include setResponsiveDesign($breakpoint-mobile-landscape) {
+                        @include flexBasis(80%);
+                    }
+
                     .comment {
                         font-style: italic;
                         line-height: 1.6em;
                         margin-bottom: 22px;
+
+                        @include setResponsiveDesign($breakpoint-desktop-sd) {
+                            font-size: 1.2em;
+                        }
                     }
 
                     hr {
