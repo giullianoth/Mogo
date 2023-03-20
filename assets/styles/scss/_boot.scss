@@ -60,7 +60,14 @@ img {
         cursor: pointer;
         border: none;
     }
+
+    &_mainparagraph {
+        text-align: center;
+        line-height: 1.8em;
+        @include containerSpacing(40px);
+    }
 }
 
 @import "theme/header";
 @import "theme/slider";
+@import "theme/about";

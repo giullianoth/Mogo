@@ -58,6 +58,11 @@ img {
   cursor: pointer;
   border: none;
 }
+.mogo_mainparagraph {
+  text-align: center;
+  line-height: 1.8em;
+  padding: 40px 0;
+}
 
 .mogo_header {
   position: absolute;
@@ -233,4 +238,57 @@ img {
   height: 100%;
   background-color: #F38181;
   display: block;
+}
+
+.mogo_about {
+  padding: 60px 0;
+  width: 100%;
+}
+.mogo_about_content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.mogo_about_content_gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.mogo_about_content_gallery_item {
+  flex-basis: 100%;
+  position: relative;
+  background-image: linear-gradient(to bottom, #F38181, #FCE38A);
+}
+.mogo_about_content_gallery_item_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+}
+.mogo_about_content_gallery_item_title a {
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mogo_about_content_gallery_item_title a i {
+  display: block;
+  margin-bottom: 12px;
+}
+.mogo_about_content_gallery_item:hover {
+  box-shadow: 10px 10px 0 #95E1D3;
+}
+.mogo_about_content_gallery_item:hover .mogo_about_content_gallery_item_image {
+  opacity: 0.1;
+}
+.mogo_about_content_gallery_item:hover .mogo_about_content_gallery_item_title {
+  display: flex;
 }

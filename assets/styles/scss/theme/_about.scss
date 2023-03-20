@@ -1,0 +1,51 @@
+@include theme() {
+    &_about {
+        @include containerSpacing;
+        @include fullWidth;
+
+        &_content {
+            @include containerWidth;
+
+            &_gallery {
+                @include flex;
+                gap: 24px;
+
+                &_item {
+                    @include flex1;
+                    @include relative;
+                    @include gradientBackground;
+
+                    &_title {
+                        @include absoluteFull;
+                        @include flex;
+                        display: none;
+
+                        a {
+                            color: $color-white;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-weight: 700;
+
+                            i {
+                                display: block;
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow: 10px 10px 0 $color-tertiary;
+
+                        .mogo_about_content_gallery_item_image {
+                            opacity: 0.1;
+                        }
+
+                        .mogo_about_content_gallery_item_title {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
