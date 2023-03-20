@@ -1,13 +1,78 @@
 @include theme() {
     &_slider {
         @include fullWidth;
+        @include adjustBackgroundImage;
+        background-image: $color-gradient;
 
         &_content {
             height: 900px;
             @include adjustBackgroundImage;
 
-            * {
-                display: none;
+            overflow: hidden;
+            @include relative;
+
+            @include flex(flex-end, center, nowrap);
+            flex-direction: column;
+
+            &_slide {
+                @include fullWidth;
+                height: 100%;
+                padding-top: 120px;
+
+                @include flex;
+                text-align: center;
+
+                &_headline {
+                    h1 {
+                        font-size: 3em;
+                        color: $color-white;
+
+                        span {
+                            font-size: 0.5em;
+                        }
+
+                        hr {
+                            border-color: $color-white;
+                        }
+                    }
+
+                    a {
+                        border: 3px solid $color-white;
+                        background: none;
+                        margin-top: 50px;
+                    }
+                }
+            }
+
+            &_nav {
+                @include fullWidth;
+                padding-bottom: 30px;
+
+                &_content {
+                    @include flex(center, center, nowrap);
+                    gap: 8px;
+                    @include containerWidth;
+
+                    &_item {
+                        @include flex4(8px);
+
+                        h2 {
+                            color: $color-white;
+                            display: none;
+
+                            &:not(span) {
+                                font-weight: 400;
+                            }
+                        }
+
+                        .progressbar {
+                            @include fullWidth;
+                            height: 3px;
+                            background-color: $color-white;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
             }
         }
     }

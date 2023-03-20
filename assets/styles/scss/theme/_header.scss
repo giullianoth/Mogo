@@ -7,11 +7,9 @@
 
         &_content {
             @include containerWidth;
-            @include flex;
+            @include flex(space-between);
 
             &_title {
-                @include flex2;
-
                 h1 {
                     text-transform: none;
                     font-size: 1.6em;
@@ -23,7 +21,6 @@
             }
 
             &_menu {
-                @include flex2;
                 @include relative;
                 text-align: right;
 
@@ -47,7 +44,7 @@
                     display: none;
 
                     @include setResponsiveDesign($breakpoint-tablet-landscape) {
-                        @include flex(flex-end, stretch);
+                        @include flex(flex-end, stretch, nowrap);
                         column-gap: 20px;
                         position: static;
                         background: none;
@@ -70,10 +67,10 @@
 
                             &:hover {
                                 color: $color-secondary;
-                            }
 
-                            &:hover:not(.icon) {                                
-                                border-bottom: 3px solid $color-secondary;
+                                &:not(.icon) {                                
+                                    border-bottom: 3px solid $color-secondary;
+                                }
                             }
                         }
                     }

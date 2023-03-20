@@ -27,9 +27,38 @@ img {
     @include fullWidth;
 }
 
-@mixin theme() {
-    .mogo {
-        @content;
+@include theme() {
+    &_title {
+        text-align: center;
+        font-size: 1.6em;
+
+        span {
+            font-family: $font-kaushan;
+            font-weight: normal;
+            font-size: 1em;
+            display: block;
+            text-transform: none;
+            margin-bottom: 24px;
+        }
+
+        hr {
+            margin: 40px auto 0 auto;
+            width: 60px;
+            border: none;
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+
+    &_button {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $color-white;
+        font-family: $font-montserrat;
+        font-weight: 700;
+        padding: 14px 30px;
+        background-color: $color-tertiary;
+        cursor: pointer;
+        border: none;
     }
 }
 

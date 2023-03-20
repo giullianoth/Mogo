@@ -1,3 +1,10 @@
+// SET THEME
+@mixin theme() {
+    .mogo {
+        @content;
+    }
+}
+
 // BROWSERS CORE
 @mixin setAttributeCores($attr, $value, $browsers: $browsers-core) {
     #{$attr}: #{$value};
