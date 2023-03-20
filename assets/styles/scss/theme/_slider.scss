@@ -1,0 +1,14 @@
+@include theme() {
+    &_slider {
+        @include fullWidth;
+
+        &_content {
+            height: 900px;
+            @include adjustBackgroundImage;
+
+            * {
+                display: none;
+            }
+        }
+    }
+}

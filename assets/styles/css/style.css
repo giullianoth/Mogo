@@ -86,3 +86,16 @@ img {
 .mogo_header_content_menu ul li a:hover {
   color: #FCE38A;
 }
+
+.mogo_slider {
+  width: 100%;
+}
+.mogo_slider_content {
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.mogo_slider_content * {
+  display: none;
+}
