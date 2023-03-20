@@ -81,7 +81,7 @@
 }
 
 // BACKGROUND IMAGE
-@mixin adjustBackgroundImage($image: "", $backgroundRepeat: no-repeat, $backgroundSize: cover, $backgroundPosition: center center) {
+@mixin backgroundImage($image: "", $backgroundRepeat: no-repeat, $backgroundSize: cover, $backgroundPosition: center center) {
     @if $image != "" {
         background-image: url(#{$image});
     }

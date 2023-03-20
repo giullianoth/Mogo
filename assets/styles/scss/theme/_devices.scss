@@ -1,0 +1,18 @@
+@include theme() {
+    &_devices {
+        @include fullWidth;
+        @include containerSpacing;
+        @include backgroundImage("../../../assets/images/all-devices.jpg");
+
+        &_content {
+            padding-top: 60px;
+
+            &_image {
+                img {
+                    @include containerWidth(636px);
+                    transform: translateY(13.5%);
+                }
+            }
+        }
+    }
+}

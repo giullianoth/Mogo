@@ -1,12 +1,12 @@
 @include theme() {
     &_slider {
         @include fullWidth;
-        @include adjustBackgroundImage;
+        @include backgroundImage;
         background-image: $color-gradient;
 
         &_content {
             height: 900px;
-            @include adjustBackgroundImage;
+            @include backgroundImage;
 
             overflow: hidden;
             @include relative;

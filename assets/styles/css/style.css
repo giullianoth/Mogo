@@ -448,3 +448,21 @@ img {
     border-bottom: none;
   }
 }
+
+.mogo_devices {
+  width: 100%;
+  margin: 60px 0;
+  background-image: url(../../../assets/images/all-devices.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.mogo_devices_content {
+  padding-top: 60px;
+}
+.mogo_devices_content_image img {
+  max-width: 636px;
+  margin: auto;
+  padding: 0 20px;
+  transform: translateY(13.5%);
+}
