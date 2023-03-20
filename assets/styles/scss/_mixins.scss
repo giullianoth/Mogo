@@ -26,7 +26,7 @@
 }
 
 @mixin containerSpacing($paddingY: 60px, $paddingX: 0) {
-    padding: $paddingY $paddingX;
+    margin: $paddingY $paddingX;
 }
 
 // FLEXBOX

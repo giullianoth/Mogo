@@ -1,0 +1,60 @@
+@include theme() {
+    &_statistics {
+        @include containerSpacing;
+        @include fullWidth;
+        background-color: $color-tertiary;
+
+        &_content {
+            @include containerWidth(1200px, 0, 0);
+            @include flex;
+
+            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                padding: 0 20px;
+            }
+
+            &_statistic {
+                @include flex1;
+                padding: 40px 0;
+                text-align: center;
+
+                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                    @include flexBasis(20%, 1px);    
+                    border-right: 1px solid $color-white;                
+                }
+
+                &:first-child {
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        border-left: 1px solid $color-white;
+                    }
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-white;
+
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        border-bottom: none;
+                    }
+                }
+
+                h1 {
+                    font-size: 2.6em;
+                    color: $color-white;
+
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        font-size: 4em;
+                    }
+                    
+                    span {
+                        display: block;
+                        font-size: 0.4em;
+                        font-weight: 400;
+
+                        @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                            font-size: 0.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
