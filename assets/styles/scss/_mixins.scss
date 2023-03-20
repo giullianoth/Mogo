@@ -73,3 +73,10 @@
     background-size: $backgroundSize;
     background-position: $backgroundPosition;
 }
+
+// RESPONSIVE DESIGN
+@mixin setResponsiveDesign($screenWidth) {
+    @media screen and (min-width: $screenWidth) {
+        @content;
+    }
+}

@@ -64,6 +64,12 @@ img {
 .mogo_header_content_menu_icon {
   font-size: 1.8em;
   color: #FFF;
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  .mogo_header_content_menu_icon {
+    display: none;
+  }
 }
 .mogo_header_content_menu ul {
   position: absolute;
@@ -72,19 +78,40 @@ img {
   right: 0;
   background-color: #F38181;
   padding: 20px 40px;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .mogo_header_content_menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    position: static;
+    background: none;
+    padding: 0;
+  }
 }
 .mogo_header_content_menu ul li {
   list-style: none;
-  padding: 12px 0;
 }
 .mogo_header_content_menu ul li a {
   font-size: 1.4em;
   color: #FFF;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  padding: 12px 0;
+}
+@media screen and (min-width: 900px) {
+  .mogo_header_content_menu ul li a {
+    font-size: 1em;
+  }
 }
 .mogo_header_content_menu ul li a:hover {
   color: #FCE38A;
+}
+.mogo_header_content_menu ul li a:hover:not(.icon) {
+  border-bottom: 3px solid #FCE38A;
 }
 
 .mogo_slider {
