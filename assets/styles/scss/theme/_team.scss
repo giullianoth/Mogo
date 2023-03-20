@@ -1,0 +1,53 @@
+@include theme() {
+    &_team {
+        @include fullWidth;
+        @include containerSpacing;
+
+        &_content {
+            @include containerWidth;
+
+            &_list {
+                @include flex;
+                gap: 50px;
+
+                &_member {
+                    @include flex1;
+
+                    &_image {
+                        &_social {
+                            li {
+                                list-style: none;
+
+                                a {
+                                    background-color: $color-secondary;
+                                    color: $color-primary;
+                                    font-size: 1.6em;
+                                    display: inline-block;
+                                    padding: 16px 20px;
+
+                                    &:not(:last-child) {
+                                        border-right: 1px solid $color-primary;
+                                    }
+
+                                    &:hover {
+                                        background-color: $color-primary;
+                                        color: $color-secondary;
+                                    }
+
+                                    i {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &_info {
+                        margin-top: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

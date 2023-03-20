@@ -642,3 +642,47 @@ img {
   color: #333;
   margin-left: 10px;
 }
+
+.mogo_team {
+  width: 100%;
+  margin: 60px 0;
+}
+.mogo_team_content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.mogo_team_content_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.mogo_team_content_list_member {
+  flex-basis: 100%;
+}
+.mogo_team_content_list_member_image_social li {
+  list-style: none;
+}
+.mogo_team_content_list_member_image_social li a {
+  background-color: #FCE38A;
+  color: #F38181;
+  font-size: 1.6em;
+  display: inline-block;
+  padding: 16px 20px;
+}
+.mogo_team_content_list_member_image_social li a:not(:last-child) {
+  border-right: 1px solid #F38181;
+}
+.mogo_team_content_list_member_image_social li a:hover {
+  background-color: #F38181;
+  color: #FCE38A;
+}
+.mogo_team_content_list_member_image_social li a i {
+  margin: 0;
+}
+.mogo_team_content_list_member_info {
+  margin-top: 30px;
+  text-align: center;
+}
