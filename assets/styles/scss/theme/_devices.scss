@@ -3,7 +3,7 @@
         @include fullWidth;
         @include containerSpacing;
         margin-bottom: 80px;
-        @include backgroundImage("../../../assets/images/all-devices.jpg");
+        @include backgroundImage("../../images/all-devices.jpg");
 
         &_content {
             padding-top: 60px;

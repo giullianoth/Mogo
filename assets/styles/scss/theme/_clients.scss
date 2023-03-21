@@ -3,7 +3,7 @@
         @include fullWidth;
         @include containerSpacing;
 
-        @include backgroundImage("../../../assets/images/clients.jpg");
+        @include backgroundImage("../../images/clients.jpg");
         padding: 60px 0;
 
         &_content {

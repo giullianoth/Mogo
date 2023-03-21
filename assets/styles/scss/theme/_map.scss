@@ -1,0 +1,17 @@
+@include theme() {
+    &_map {
+        @include fullWidth;
+        @include containerSpacing;
+
+        @include backgroundImage("../../images/map.jpg");
+        cursor: pointer;
+
+        &_content {
+            padding: 60px 0;
+
+            h1 {
+                color: $color-primary;
+            }
+        }
+    }
+}

@@ -455,7 +455,7 @@ img {
   width: 100%;
   margin: 60px 0;
   margin-bottom: 80px;
-  background-image: url(../../../assets/images/all-devices.jpg);
+  background-image: url(../../images/all-devices.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -812,7 +812,7 @@ img {
 .mogo_clients {
   width: 100%;
   margin: 60px 0;
-  background-image: url(../../../assets/images/clients.jpg);
+  background-image: url(../../images/clients.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -992,4 +992,20 @@ img {
 }
 .mogo_blog_content_list_post_stats span i {
   color: #95E1D3;
+}
+
+.mogo_map {
+  width: 100%;
+  margin: 60px 0;
+  background-image: url(../../images/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+}
+.mogo_map_content {
+  padding: 60px 0;
+}
+.mogo_map_content h1 {
+  color: #F38181;
 }
