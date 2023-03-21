@@ -658,12 +658,29 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+  max-width: 480px;
+  margin: auto;
+  padding: 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .mogo_team_content_list {
+    max-width: 100%;
+    gap: 20px;
+  }
 }
 .mogo_team_content_list_member {
   flex-basis: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .mogo_team_content_list_member {
+    flex-basis: calc(33.3333333333% - 20px);
+  }
+}
 .mogo_team_content_list_member_image_social li {
   list-style: none;
+}
+.mogo_team_content_list_member_image_social li:not(:last-child) {
+  border-right: 1px solid #F38181;
 }
 .mogo_team_content_list_member_image_social li a {
   background-color: #FCE38A;
@@ -671,9 +688,6 @@ img {
   font-size: 1.6em;
   display: inline-block;
   padding: 16px 20px;
-}
-.mogo_team_content_list_member_image_social li a:not(:last-child) {
-  border-right: 1px solid #F38181;
 }
 .mogo_team_content_list_member_image_social li a:hover {
   background-color: #F38181;
