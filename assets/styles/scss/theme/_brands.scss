@@ -1,0 +1,40 @@
+@include theme() {
+    &_brands {
+        @include fullWidth;
+        @include containerSpacing;
+
+        background-color: $color-neutral-4;
+        padding: 60px 0;
+
+        &_content {
+            @include containerWidth;
+            @include flex;
+            gap: 30px;
+
+            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                justify-content: space-between;
+            }
+
+            &_brand {
+                @include flex3(30px);
+                @include flex;
+
+                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                    flex-basis: unset;
+                }
+
+                img {
+                    width: 60px;
+
+                    @include setResponsiveDesign($breakpoint-mobile-landscape) {
+                        width: 90px;
+                    }
+
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
