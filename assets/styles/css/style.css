@@ -611,6 +611,11 @@ img {
   font-size: 3em;
   color: #95E1D3;
 }
+.mogo_comments_content_commentarea_image.comments2_commentarea_image img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
 .mogo_comments_content_commentarea_comment {
   flex-basis: 100%;
 }
