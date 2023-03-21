@@ -1,0 +1,59 @@
+@include theme() {
+    &_work {
+        @include fullWidth;
+        @include containerSpacing;
+
+        &_content {
+            @include containerWidth;
+        }
+
+        &_gallery {
+            @include fullWidth;
+            @include flex;
+
+            &_item {
+                @include flex1;
+
+                @include setResponsiveDesign($breakpoint-mobile-landscape) {
+                    @include flex3;
+                }
+
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    @include flex4;
+                }
+
+                &:nth-child(7), &:nth-child(8) {
+                    @include setResponsiveDesign($breakpoint-mobile-landscape) {
+                        display: none;
+                    }
+
+                    @include setResponsiveDesign($breakpoint-desktop-sd) {
+                        display: block;
+                    }
+                }
+
+                &_title {
+                    flex-direction: column;
+
+                    i {
+                        font-size: 1.6em;
+                    }
+
+                    a {
+                        font-weight: 400;
+                    }
+
+                    p {
+                        margin-top: 30px;
+
+                        a {
+                            font-size: 0.875em;
+                            font-style: italic;
+                            text-transform: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
