@@ -1,0 +1,92 @@
+@include theme() {
+    &_clients {
+        @include fullWidth;
+        @include containerSpacing;
+
+        @include backgroundImage("../../../assets/images/clients.jpg");
+        padding: 60px 0;
+
+        &_content {
+            @include containerWidth;
+
+            &_comments {                
+                @include flex;
+                gap: 60px;
+
+                @include containerWidth($breakpoint-mobile-landscape, 0, 0);                
+                margin-top: 60px;
+
+                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                    max-width: 100%;
+                }
+
+                &_item {
+                    @include flex1;
+                    @include flex(center, flex-start);
+                    gap: 20px;
+
+                    @include setResponsiveDesign($breakpoint-mobile) {
+                        gap: 40px;
+                    }
+
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        @include flex2(60px);
+                    }
+
+                    &_image {
+                        @include flex1;
+                        @include flex;
+
+                        @include setResponsiveDesign($breakpoint-mobile) {
+                            @include flexBasis(120px);
+                        }
+
+                        img {
+                            @include setAttributeCores(border-radius, 50%);
+                            width: 120px;
+                        }
+                    }
+
+                    &_info {
+                        @include flex1;
+
+                        @include setResponsiveDesign($breakpoint-mobile) {
+                            @include flexBasis(calc(100% - 120px), 40px);
+                        }
+
+                        .title {
+                            text-align: center;
+
+                            @include setResponsiveDesign($breakpoint-mobile) {
+                                text-align: left;
+                            }
+
+                            .client {
+                                margin-bottom: 20px;
+                            }
+
+                            .role {
+                                margin-bottom: 20px;
+                                font-style: italic;
+                                color: $color-neutral-1;
+                            }
+                        }
+
+                        hr {
+                            margin: auto;
+
+                            @include setResponsiveDesign($breakpoint-mobile) {
+                                margin: 0;
+                            }
+                        }
+
+                        .comment {
+                            line-height: 1.8em;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

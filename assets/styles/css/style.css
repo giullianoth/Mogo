@@ -48,9 +48,6 @@ img {
 }
 .mogo_title hr {
   margin: 40px auto 0 auto;
-  width: 60px;
-  border: none;
-  border-bottom: 3px solid #F38181;
 }
 .mogo_button {
   display: inline-block;
@@ -103,6 +100,11 @@ img {
 }
 .mogo_card:hover .mogo_card_title {
   display: flex;
+}
+.mogo_horizontalline {
+  width: 60px;
+  border: none;
+  border-bottom: 3px solid #F38181;
 }
 
 .mogo_header {
@@ -636,9 +638,6 @@ img {
 }
 .mogo_comments_content_commentarea_comment hr {
   display: inline-block;
-  width: 60px;
-  border: none;
-  border-bottom: 3px solid #F38181;
 }
 .mogo_comments_content_commentarea_comment .author {
   display: inline-block;
@@ -808,4 +807,107 @@ img {
   font-size: 0.875em;
   font-style: italic;
   text-transform: none;
+}
+
+.mogo_clients {
+  width: 100%;
+  margin: 60px 0;
+  background-image: url(../../../assets/images/clients.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 60px 0;
+}
+.mogo_clients_content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.mogo_clients_content_comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 600px;
+  margin: auto;
+  padding: 0 0;
+  margin-top: 60px;
+}
+@media screen and (min-width: 900px) {
+  .mogo_clients_content_comments {
+    max-width: 100%;
+  }
+}
+.mogo_clients_content_comments_item {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 480px) {
+  .mogo_clients_content_comments_item {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .mogo_clients_content_comments_item {
+    flex-basis: calc(50% - 60px);
+  }
+}
+.mogo_clients_content_comments_item_image {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .mogo_clients_content_comments_item_image {
+    flex-basis: 120px;
+  }
+}
+.mogo_clients_content_comments_item_image img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 120px;
+}
+.mogo_clients_content_comments_item_info {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 480px) {
+  .mogo_clients_content_comments_item_info {
+    flex-basis: calc(100% - 120px - 40px);
+  }
+}
+.mogo_clients_content_comments_item_info .title {
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .mogo_clients_content_comments_item_info .title {
+    text-align: left;
+  }
+}
+.mogo_clients_content_comments_item_info .title .client {
+  margin-bottom: 20px;
+}
+.mogo_clients_content_comments_item_info .title .role {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #333;
+}
+.mogo_clients_content_comments_item_info hr {
+  margin: auto;
+}
+@media screen and (min-width: 480px) {
+  .mogo_clients_content_comments_item_info hr {
+    margin: 0;
+  }
+}
+.mogo_clients_content_comments_item_info .comment {
+  line-height: 1.8em;
+  margin-top: 20px;
 }
