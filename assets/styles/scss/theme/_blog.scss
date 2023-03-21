@@ -1,0 +1,89 @@
+@include theme() {
+    &_blog {
+        @include fullWidth;
+        @include containerSpacing;
+
+        &_content {
+            @include containerWidth;
+
+            &_list {
+                @include flex;
+                gap: 60px;
+
+                @include containerWidth($breakpoint-mobile, 0, 0);
+                margin-top: 60px;
+
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    max-width: 100%;
+                    gap: 30px;
+                }
+
+                &_post {
+                    @include flex1;
+
+                    @include setResponsiveDesign($breakpoint-desktop-sd) {
+                        @include flex3(30px);
+                    }
+
+                    &_image {
+                        @include relative;
+
+                        .date {
+                            @include absolute(unset, -10px);
+                            bottom: 10px;
+                            text-align: center;
+                            color: $color-white;
+                            background-color: $color-tertiary;
+                            padding: 12px;
+                            font-family: $font-montserrat;
+                            font-style: italic;
+
+                            span {
+                                display: block;
+                                font-size: 1.4em;
+                                font-weight: 700;
+                                font-style: normal;
+                            }
+                        }
+                    }
+
+                    &_info {
+                        padding: 20px 0;
+                        border-bottom: 1px solid $color-neutral-3;
+
+                        .title {
+                            margin-bottom: 20px;
+
+                            a {
+                                color: $color-neutral-1;
+                            }
+                        }
+
+                        .desc {
+                            a {
+                                color: $color-neutral-2;
+                            }
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &_stats {
+                        margin-top: 20px;
+                        font-style: italic;
+
+                        span {
+                            margin-right: 20px;
+
+                            i {
+                                color: $color-tertiary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
