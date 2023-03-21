@@ -1,0 +1,172 @@
+@include theme() {
+    &_footer {
+        @include fullWidth;
+        padding-top: 120px;
+        background-color: $color-neutral-4;
+
+        &_content {
+            @include containerWidth;
+            @include flex;
+            gap: 60px;
+
+            &_about {
+                @include flex1;
+
+                &_title {
+                    margin-bottom: 40px;
+
+                    h1 {
+                        margin-bottom: 40px;
+
+                        a {
+                            color: #CCC;
+                            text-transform: none;
+                            font-size: 2.2em;
+                        }
+                    }
+
+                    p {
+                        line-height: 1.6em;
+                    }
+                }
+
+                &_followers {
+                    font-family: $font-montserrat;
+                    color: $color-neutral-1;
+                    padding-bottom: 18px;
+                    border-bottom: 1px solid $color-neutral-3;
+
+                    strong {
+                        font-size: 1.2em;
+                    }
+                }
+
+                &_social {
+                    margin: 18px 0;
+                    font-style: italic;
+
+                    ul {
+                        margin-left: 18px;
+                        @include flex(flex-start, stretch, nowrap);
+                        display: inline-flex;
+                        gap: 10px;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                color: $color-tertiary;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+
+                &_subscribe {
+                    margin-top: 20px;
+                    @include flex;
+                    row-gap: 10px;
+
+                    input {
+                        padding: 12px 30px;
+                        border: 1px solid $color-neutral-3;
+                        outline: none;
+                        display: block;
+                        @include flex1;
+                    }
+
+                    button {
+                        display: block;
+                        @include flex1;
+                    }
+                }
+            }
+
+            &_blog {
+                @include flex1;
+                @include flex;
+                gap: 30px;
+
+                &_title {
+                    @include flex1;
+                }
+
+                &_post {
+                    @include flex1;
+                    @include flex(flex-start, center, nowrap);
+                    gap: 10px;
+
+                    &_image {
+                        display: block;
+                        @include flexBasis(120px, 10px);
+                    }
+
+                    &_title {
+                        @include flexBasis(calc(100% - 120px), 10px);
+
+                        a {
+                            color: $color-neutral-1;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .date {
+                            font-size: 0.875em;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+
+            &_instagram {
+                @include flex1;
+
+                &_title {
+                    margin-bottom: 30px;
+                }
+
+                &_content {
+                    @include flex;
+                    gap: 2px;
+                    margin-bottom: 20px;
+                    
+                    &_post {
+                        @include flex3(2px);
+                    }
+                }
+
+                &_viewmore {
+                    margin-bottom: 30px;
+
+                    a {
+                        color: $color-neutral-2;
+                        font-style: italic;
+                        font-size: 0.875em;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_rights {
+            text-align: center;
+            font-family: $font-montserrat;
+            padding: 25px 0;
+            border-top: 1px solid $color-neutral-3;
+            color: $color-neutral-1;
+
+            a {
+                color: $color-primary;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

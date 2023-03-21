@@ -5,6 +5,7 @@
 
         @include backgroundImage("../../images/map.jpg");
         cursor: pointer;
+        margin-bottom: 0;
 
         &_content {
             padding: 60px 0;
