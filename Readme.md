@@ -1,8 +1,10 @@
 # MoGo Project
 
-Este projeto consiste numa página de um site fictício chamado Mogo, cujos serviços estão voltados para web design e marketing digital. Foi construído para fins acadêmicos, com o intuito de se aplicar as tecnologias e padrões do web design. O layout foi desenhado por [Laaqiq](https://www.instagram.com/laaqiq.design/).
+[![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML) [![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS) [![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) [![](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/) [![](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
 
-*This project consists of a page from a fictitious website called Mogo, whose services are focused on web design and digital marketing. It was built for academic purposes, in order to apply web design technologies and standards. The layout was designed by [Laaqiq](https://www.instagram.com/laaqiq.design/).*
+Este projeto consiste numa página de um site fictício chamado Mogo, cujos serviços estão voltados para web design, design gráfico e, provavelmente, marketing digital. Foi construído para fins acadêmicos, com o intuito de se aplicar as tecnologias e padrões do web design. O layout foi desenhado por [Laaqiq](https://www.instagram.com/laaqiq.design/).
+
+*This project consists of a page from a fictitious website called Mogo, whose services are focused on web design, graphic design and, probably, digital marketing. It was built for academic purposes, in order to apply web design technologies and standards. The layout was designed by [Laaqiq](https://www.instagram.com/laaqiq.design/).*
 
 ## Status do projeto | Project status
 
