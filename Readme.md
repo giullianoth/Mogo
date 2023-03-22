@@ -125,6 +125,8 @@ Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
     ]
     ```
     - *Then, at the bottom of the editor, click on "Watch Sass".*
+- *If you are not using VS Code, you need to install NodeJS to use Sass.*
+    - *After installing NodeJS, open the command prompt and navigate to your project directory.*
     ```
     cd [project path]
     ```
@@ -136,8 +138,6 @@ Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
     ```
     sass assets/styles/scss/style.scss:assets/styles/css/style.css --watch
     ```
-- *If you are not using VS Code, you need to install NodeJS to use Sass.*
- - *After installing NodeJS, open the command prompt and navigate to your project directory.*
 
 - *I also recommend installing the "[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" extension. If not, open the ```index.html``` file in your browser.*
 - *Enjoy it!*
