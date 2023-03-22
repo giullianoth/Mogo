@@ -134,7 +134,7 @@ Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
     ```
     npm install -g sass
     ```
-    - Activate the compiler with the following command:
+    - *Activate the compiler with the following command:*
     ```
     sass assets/styles/scss/style.scss:assets/styles/css/style.css --watch
     ```
