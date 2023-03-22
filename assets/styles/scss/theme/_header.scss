@@ -60,6 +60,7 @@
                             text-transform: uppercase;
                             font-family: $font-montserrat;
                             padding: 12px 0;
+                            display: inline-block;
 
                             @include setResponsiveDesign($breakpoint-tablet-landscape) {
                                 font-size: 1em;
