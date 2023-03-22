@@ -25,8 +25,8 @@
     padding: $paddingY $paddingX;
 }
 
-@mixin containerSpacing($paddingY: 60px, $paddingX: 0) {
-    margin: $paddingY $paddingX;
+@mixin containerSpacing($marginY: 60px, $marginX: 0) {
+    margin: $marginY $marginX;
 }
 
 // FLEXBOX
@@ -97,7 +97,9 @@
 
 // RESPONSIVE DESIGN
 @mixin setResponsiveDesign($screenWidth) {
-    @media screen and (min-width: $screenWidth) {
+    $width: calc($screenWidth + 1px);
+
+    @media screen and (min-width: $width) {
         @content;
     }
 }

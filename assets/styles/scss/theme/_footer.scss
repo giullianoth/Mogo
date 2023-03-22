@@ -6,11 +6,21 @@
 
         &_content {
             @include containerWidth;
-            @include flex;
+            @include flex(center, flex-start);
             gap: 60px;
+
+            @include containerWidth($breakpoint-mobile);
+
+            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                @include containerWidth;
+            }
 
             &_about {
                 @include flex1;
+
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    @include flexBasis(40%, 60px);
+                }
 
                 &_title {
                     margin-bottom: 40px;
@@ -63,9 +73,13 @@
                 }
 
                 &_subscribe {
-                    margin-top: 20px;
+                    margin: 20px 0;
                     @include flex;
                     row-gap: 10px;
+
+                    @include setResponsiveDesign($breakpoint-mobile) {
+                        flex-wrap: nowrap;
+                    }
 
                     input {
                         padding: 12px 30px;
@@ -73,11 +87,26 @@
                         outline: none;
                         display: block;
                         @include flex1;
+
+                        font-family: inherit;
+
+                        @include setResponsiveDesign($breakpoint-mobile) {
+                            @include flexBasis(60%, 2px);
+                        }
+
+                        &::placeholder {
+                            color: $color-neutral-3;
+                            font-style: italic;
+                        }
                     }
 
                     button {
                         display: block;
                         @include flex1;
+
+                        @include setResponsiveDesign($breakpoint-mobile) {
+                            @include flexBasis(40%);
+                        }
                     }
                 }
             }
@@ -86,6 +115,14 @@
                 @include flex1;
                 @include flex;
                 gap: 30px;
+
+                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                    @include flex2(60px);
+                }
+
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    @include flexBasis(30%, 60px);
+                }
 
                 &_title {
                     @include flex1;
@@ -123,6 +160,14 @@
             &_instagram {
                 @include flex1;
 
+                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                    @include flex2(60px);
+                }
+
+                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                    @include flexBasis(30%, 60px);
+                }
+
                 &_title {
                     margin-bottom: 30px;
                 }
@@ -131,7 +176,7 @@
                     @include flex;
                     gap: 2px;
                     margin-bottom: 20px;
-                    
+
                     &_photo {
                         @include flex3(2px);
                     }
