@@ -182,11 +182,12 @@ img {
     font-size: 1em;
   }
 }
+.mogo_header_content_menu ul li a:not(.icon) {
+  border-bottom: 3px solid transparent;
+}
 .mogo_header_content_menu ul li a:hover {
   color: #FCE38A;
-}
-.mogo_header_content_menu ul li a:hover:not(.icon) {
-  border-bottom: 3px solid #FCE38A;
+  border-color: #FCE38A;
 }
 
 .mogo_slider {
