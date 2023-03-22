@@ -35,10 +35,22 @@ $(function () {
     }, slideTime);
 
     // BOX COLLAPSE
+    function boxHeight() {
+        var box = $(".j_collapse_image")[0].offsetHeight;
+
+        if (window.outerWidth < 600 && window.outerWidth > 400) {
+            box *= 1.5;
+        } else if (window.outerWidth < 400) {
+            box *= 2;
+        }
+
+        return box;
+    }
+
     var collapseParagraph = $(".j_collapse_paragraph");
     var collapseClickable = $(".j_collapse_clickable");
 
-    var collapseBoxTotalHeight = (window.outerWidth < 1024 ? $(".j_collapse_image")[0].offsetHeight * 1.5 : $(".j_collapse_image")[0].offsetHeight);
+    var collapseBoxTotalHeight = boxHeight();
     var collapseClickableTotalHeight = collapseClickable[0].offsetHeight * collapseClickable.length;
     var marginHeight = 14 * (collapseClickable.length - 2);
     var paddingHeight = 24 * 2;
@@ -48,7 +60,7 @@ $(function () {
     collapseParagraph.css("height", String(collapseParagraphTotalHeight) + "px");
 
     window.onresize = function () {
-        collapseBoxTotalHeight = (window.outerWidth < 1024 ? $(".j_collapse_image")[0].offsetHeight * 1.5 : $(".j_collapse_image")[0].offsetHeight);
+        collapseBoxTotalHeight = boxHeight();
         collapseParagraphTotalHeight = collapseBoxTotalHeight - collapseClickableTotalHeight - marginHeight - paddingHeight;
         collapseParagraph.css("height", String(collapseParagraphTotalHeight) + "px");
     };
