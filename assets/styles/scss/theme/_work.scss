@@ -32,6 +32,10 @@
                     }
                 }
 
+                &:hover {
+                    box-shadow: none;
+                }
+
                 &_title {
                     flex-direction: column;
 

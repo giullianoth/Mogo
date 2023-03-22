@@ -791,6 +791,9 @@ img {
     display: block;
   }
 }
+.mogo_work_gallery_item:hover {
+  box-shadow: none;
+}
 .mogo_work_gallery_item_title {
   flex-direction: column;
 }
