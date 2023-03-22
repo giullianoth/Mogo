@@ -8,6 +8,14 @@ Este projeto consiste numa página de um site fictício chamado Mogo, cujos serv
 
 *This project consists of a page from a fictitious website called Mogo, whose services are focused on web design, graphic design and, probably, digital marketing. It was built for academic purposes, in order to apply web design technologies and standards. The layout was designed by [Laaqiq](https://www.instagram.com/laaqiq.design/).*
 
+## Visão geral | Overview
+
+- [Status do projeto | Project status](#status-do-projeto--project-status)
+- [Layout](#layout)
+- [Tecnologias utilizadas | Technologies used](#tecnologias-utilizadas--technologies-used)
+- [Como instalar | How to install](#como-instalar--how-to-install)
+- [Autor | Author](#autor--author)
+
 ## Status do projeto | Project status
 
 Projeto finalizado, sendo aberto a propostas de melhorias ou correções.
