@@ -18,7 +18,23 @@ Construído a partir do método *mobile-first*, o projeto é responsivo, ou seja
 
 *Built from the mobile-first method, the project is responsive, that is, it is adaptable to the most varied sizes and screen resolutions, as shown below.*
 
-[imagem]
+![Screenshot in 375px](assets/images/screenshots/screenshot_375px.png)
+
+Captura de tela em 375px | *Screenshot in 375px*
+
+---
+
+![Screenshot in 768px](assets/images/screenshots/screenshot_768px.png)
+
+Captura de tela em 768px | *Screenshot in 768px*
+
+---
+
+![Screenshot in 1440px](assets/images/screenshots/screenshot_1440px.png)
+
+Captura de tela em 1440px | *Screenshot in 1440px*
+
+---
 
 Você também pode conferir a página acessando este link: [https://mogo-nu.vercel.app/](https://mogo-nu.vercel.app/).
 
@@ -34,10 +50,10 @@ Foram utilizadas as seguintes tecnologias para a construção desta página:
 
 *The following technologies were used to build this page:*
 
-- HTML 5
-- CSS 3
-- JavaScript / jQuery
-- Sass
+- [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS 3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) / [jQuery](https://jquery.com/)
+- [Sass](https://sass-lang.com/)
 
 Vale lembrar que foram aplicados o uso de tags semânticas ao HTML, para tornar a página com acessibilidade facilitada e seguir as boas práticas do desenvolvimento web.
 
@@ -51,8 +67,8 @@ O uso do preprocessador CSS (nesse caso o Sass) torna mais produtiva a aplicaç�
 
 Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
 
-- Instale o editor VS Code (recomendo fortemente, mas se há outro editor do seu gosto, não tem problema) e abra o projeto nele.
-- Instale a extensão "Live Sass Compiler", ela que vai converter seu Sass em CSS. Após instalado:
+- Instale o editor [VS Code](https://code.visualstudio.com/) (recomendo fortemente, mas se há outro editor do seu gosto, não tem problema) e abra o projeto nele.
+- Instale a extensão "[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)", ela que vai converter seu Sass em CSS. Após instalado:
     - Clique no ícone de engrenagem, depois em "Configurações de extensão" e depois em "settins.json";
     - Em ```settings.json``` acrescente os seguintes parâmetros:
     ```json
@@ -70,13 +86,13 @@ Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
     ]
     ```
     - Depois, na parte inferior do editor, clique em "Watch Sass".
-- Recomendo também instalar a extensão "Live server". Caso não queira, abra o arquivo ```index.html``` no navegador.
+- Recomendo também instalar a extensão "[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)". Caso não queira, abra o arquivo ```index.html``` no navegador.
 - Divirta-se!
 
 *To download and install the project on your computer, follow these steps:*
 
-- *Install the VS Code editor (I highly recommend it, but if there's another editor you like, no problem) and open the project in it.*
-- *Install the "Live Sass Compiler" extension, which will convert your Sass into CSS. After installed:*
+- *Install the [VS Code](https://code.visualstudio.com/) editor (I highly recommend it, but if there's another editor you like, no problem) and open the project in it.*
+- *Install the "[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)" extension, which will convert your Sass into CSS. After installed:*
     - *Click on the gear icon, then on "Extension settings" and then on "settins.json";*
     - *In ```settings.json``` add the following parameters:*
     ```json
@@ -94,7 +110,7 @@ Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
     ]
     ```
     - *Then, at the bottom of the editor, click on "Watch Sass".*
-- *I also recommend installing the "Live server" extension. If not, open the ```index.html``` file in your browser.*
+- *I also recommend installing the "[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" extension. If not, open the ```index.html``` file in your browser.*
 - *Enjoy it!*
 
 ## Autor | Author
